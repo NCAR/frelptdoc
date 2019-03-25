@@ -84,7 +84,10 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,9 +156,22 @@
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <p>Frelpt is a loop pushdown translation tool written in Python.</p>
 <p>Frelpt is mainly tested on Python 2.7 and Python 3.6. As of this version, Frelpt supports Linux OS only.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>First install frelpt using pip:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; pip install frelpt
+&gt;&gt;&gt; frelpt --version
+frelpt version <span class="m">0</span>.0.1
 </pre></div>
+</div>
+<p>To run Frelpt properly, following utilities are also required:</p>
+<blockquote>
+<div><ul class="simple">
+<li>make   : make utility</li>
+<li>cpp    : C preprocessor</li>
+<li>strace : trace system calls and signals</li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 
