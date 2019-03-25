@@ -6,6 +6,8 @@ Getting Started
 
 Frelpt is a loop pushdown translation tool written in Python.
 
+Frelpt is mainly tested on Python 2.7 and Python 3.6. As of this version, Frelpt supports Linux OS only.
+
 First install frelpt using pip:
 
 .. code-block:: bash
