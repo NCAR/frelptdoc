@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frelpt Documentation &mdash; frelpt 0.0.1 documentation</title>
+  <title>Getting Started &mdash; frelpt 0.0.1 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting Started" href="getting_started.html" /> 
+    <link rel="prev" title="Frelpt Documentation" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +49,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> frelpt
+            <a href="index.html" class="icon icon-home"> frelpt
           
 
           
@@ -83,8 +83,8 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a></li>
 </ul>
 
             
@@ -99,7 +99,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">frelpt</a>
+          <a href="index.html">frelpt</a>
         
       </nav>
 
@@ -128,15 +128,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Frelpt Documentation</li>
+      <li>Getting Started</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -149,31 +149,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="frelpt-documentation">
-<h1>Frelpt Documentation<a class="headerlink" href="#frelpt-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <p>Frelpt is a loop pushdown translation tool written in Python.</p>
-<p>Loop pushdown is a type of inter-procedural loop transformations that <em>pushes</em> a loop down to terminal
-Fortran statements in the bottom of Fortran call stack.</p>
-<p>Motivation of this transformation is to transform legacy Fortran code to run fast on modern processors
-such Graphical Processing Unit(GPU) and many-core Central Processing Unit(CPU). To be utilized fully,
-the modern processing units require a plenty of parallelization and/or vectorizatin opportunities
-concentrated on a relatively small code region. For example, to utilize GPU well, it is essential
-to create a computation intensive kernel and run the kernel on GPU as long as possible.</p>
-<p>Loop pushdown effectively transforms a program structure such that loops are located in the bottom of
-Fortran call stack so that computation intensitive increases locally at the bottom of call stack.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
-</ul>
+<p>First install frelpt using pip:</p>
 </div>
 
 
@@ -184,8 +163,8 @@ Fortran call stack so that computation intensitive increases locally at the bott
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="index.html" class="btn btn-neutral float-left" title="Frelpt Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
