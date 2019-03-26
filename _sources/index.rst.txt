@@ -18,6 +18,17 @@ Loop pushdown effectively transforms a program structure such that loops are mov
 Fortran call stack so that computation intensity increases locally at the code regions pointed by the bottom of call stack.
 
 
+    .. figure:: ./_static/frelpt-overview.svg
+        :alt: frelpt modules
+        :width:  900 px
+        :height: 300 px
+        :align: center
+   
+        **Figure:** Frelpt overview
+
+Contents
+----------
+
 .. toctree::
     :maxdepth: 2
 

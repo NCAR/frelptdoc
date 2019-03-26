@@ -101,7 +101,7 @@ Directive parser
 This module read Frelpt directive line in source file and retrieve content of the directive.
 As of this version, there is only one directive, "pushdown-directive", is defined.
 
-Freplt directive specification
+Freplt directive specification version 0.1
 
     .. productionlist:: freplt-directives
         freplt-directive: pushdown-directive
