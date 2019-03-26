@@ -155,9 +155,9 @@
 <p>Frelpt is a loop pushdown translation tool written in Python.</p>
 <p>Loop pushdown is a type of inter-procedural loop transformations that <em>pushes</em> a loop down to terminal
 Fortran statements in the bottom of Fortran call stack.</p>
-<p>Motivation of this transformation is to transform legacy Fortran code to run fast on modern processors
+<p>Motivation of this transformation is in order for legacy Fortran code to run faster on modern processors
 such Graphical Processing Unit(GPU) and many-core Central Processing Unit(CPU). To be utilized fully,
-the modern processing units require a plenty of parallelization and/or vectorizatin opportunities
+those modern processing units require a plenty of parallelization and/or vectorizatin opportunities
 concentrated on a relatively small code region. For example, to utilize GPU well, it is essential
 to create a computation intensive kernel and run the kernel on GPU as long as possible.</p>
 <p>Loop pushdown effectively transforms a program structure such that loops are moved to the bottom of
