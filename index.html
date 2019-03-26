@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frelpt Documentation &mdash; frelpt 0.0.1 documentation</title>
+  <title>Frelpt &mdash; frelpt 0.0.1 documentation</title>
   
 
   
@@ -85,6 +85,7 @@
             
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch_design.html">Architecture and design</a></li>
 </ul>
 
             
@@ -130,7 +131,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Frelpt Documentation</li>
+      <li>Frelpt</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -149,8 +150,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="frelpt-documentation">
-<h1>Frelpt Documentation<a class="headerlink" href="#frelpt-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="frelpt">
+<span id="id1"></span><h1>Frelpt<a class="headerlink" href="#frelpt" title="Permalink to this headline">¶</a></h1>
 <p>Frelpt is a loop pushdown translation tool written in Python.</p>
 <p>Loop pushdown is a type of inter-procedural loop transformations that <em>pushes</em> a loop down to terminal
 Fortran statements in the bottom of Fortran call stack.</p>
@@ -159,12 +160,17 @@ such Graphical Processing Unit(GPU) and many-core Central Processing Unit(CPU). 
 the modern processing units require a plenty of parallelization and/or vectorizatin opportunities
 concentrated on a relatively small code region. For example, to utilize GPU well, it is essential
 to create a computation intensive kernel and run the kernel on GPU as long as possible.</p>
-<p>Loop pushdown effectively transforms a program structure such that loops are located in the bottom of
-Fortran call stack so that computation intensitive increases locally at the bottom of call stack.</p>
+<p>Loop pushdown effectively transforms a program structure such that loops are moved to the bottom of
+Fortran call stack so that computation intensity increases locally at the code regions pointed by the bottom of call stack.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arch_design.html">Architecture and design</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arch_design.html#module-level-view">Module-level view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arch_design.html#frelpt-modules">Frelpt modules</a></li>
 </ul>
 </li>
 </ul>
